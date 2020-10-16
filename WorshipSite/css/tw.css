@@ -1,0 +1,1012 @@
+/* general stuff */
+
+
+body{
+margin:0px;
+font-size:10pt;
+font-family:verdana, sans-serif;
+}
+
+form {
+padding-top:0px;
+padding-bottom:0px;
+margin:0px;
+}
+
+.bodyText td {
+	font-size:10pt;
+}
+
+.smallform {
+padding:0px;
+border:none;
+line-height:1px;
+font-size:10px;
+margin:0px;
+}
+
+/*
+form input {
+font-size:11px;
+color:#647c12;
+}
+*/
+
+table {
+	border-collapse:collapse;
+}
+
+#printable{
+background:#FFFFFF;
+}
+
+#quote {
+margin-bottom:6px;
+}
+
+#quote em{
+margin-bottom:6px;
+font-size:12px;
+color:#666666;
+padding:4px;
+}
+
+
+h1 {
+font-size:35px;
+color:#933100;
+}
+
+h2 {
+font-family:Arial, Helvetica, sans-serif;
+font-size:18px;
+background:#ebebeb;
+color:#4169E1;
+}
+
+h3{
+font-size:13px;
+color:#666666;
+margin-right:10px;
+}
+
+.paragraph {
+font-size:13px;
+line-height:22px;
+color:#333333;
+}
+
+a:link { color: #4ea5cd; font-weight:bold; text-decoration:none; }
+a:visited { color: #4ea5cd; font-weight:bold; text-decoration:none; }
+a:hover {
+color:#85adbf;
+font-weight:bold;
+text-decoration:underline;
+}
+
+.smallwords {
+font-size:11px;
+}
+
+.title {
+font-family:Geneva, Arial, Helvetica, sans-serif;
+padding-top:0px;
+position:relative;
+top:-8px;
+color:#FFFFFF;
+}
+/* layout */
+
+table.topbar { 
+	height:102px;
+	color:#ffffff;
+	border-bottom:2px ridge #1B5CD4;
+	width:100%;
+	font-weight:bold;
+	font-size:14pt;
+	background:url(/css/images/banner.jpg) repeat #3f3f3f;
+	background-blend-mode: luminosity;
+	background-position-x: center;
+	z-index:10;
+}
+
+table.topbar td { 
+	vertical-align:top;
+	line-height: 12pt;
+	padding:0px;
+}
+
+table.topbar a { 
+	font-size:10pt;
+	text-decoration:underline;
+}
+#logout {
+padding-top:20px;
+padding-left:5px;
+font-size:11px;
+
+}
+
+.buttons {
+height:60px;
+overflow:hidden;
+}
+
+.hotbutton {
+display:inline;
+}
+
+pre {
+margin-top:-15px;
+}
+
+
+
+#logout a {
+color:#000000;
+margin-right:8px;
+}
+
+.navbar {
+height:52px;
+	position:absolute;
+	left:240px;
+	top:0px;
+	z-index:3;
+	padding-left:30px;
+	padding-right:30px;
+	text-align:left;
+	display:inline;
+	
+}
+
+.items {
+position:relative;
+top:19px;
+}
+
+.left_tab {
+background:url(images/tab_bg_01.gif) no-repeat;
+width:7px;
+}
+
+#current .left_tab {
+background:url(images/tab_bg_current_01.gif) no-repeat;
+}
+
+.right_tab {
+background:url(images/tab_bg_03.gif) no-repeat;
+width:7px;
+margin-right:10px;
+}
+
+#current .right_tab {
+background:url(images/tab_bg_current_03.gif) no-repeat;
+}
+
+.item_tab {
+background:url(images/tab_bg_02.gif) repeat-x;
+text-align:center;
+padding-left:8px;
+}
+
+#current .item_tab {
+background:url(images/tab_bg_current_02.gif) repeat-x;
+}
+
+
+.progressbar {
+background:#CC3300;
+}
+
+
+.navbar a{
+font-family:Arial, Helvetica, sans-serif;
+font-size:18px;
+margin-right:10px;
+font-weight:bold;
+color:#FFFFFF;
+}
+
+.navbar a:hover{
+background:none;
+color:#85adbf;
+}
+
+
+#current { 
+color:#000000;
+border-bottom:none;
+ }
+
+#left {
+width:210px;
+float:left;
+overflow:hidden;
+margin-left:8px;
+display: inline;
+}
+
+#contentholder {
+float: left;
+display: inline;}
+
+
+.padtop {
+margin-top:0px;
+position:relative;
+z-index:1;
+}
+
+.leftmods {
+width:200px;
+margin-left:5px;
+margin-top:7px;
+padding-top:5px;
+color:#333333;
+font-size:11px;
+text-align:left;
+overflow:hidden;
+background:#EBEBEB;
+
+}
+
+.leftmods span {
+position:relative;
+z-index:11;
+margin-left:3px;
+overflow:hidden
+}
+
+#leftcontent {
+position:relative;
+left:7px;
+}
+
+.leftmods a {
+color:#727f36;
+}
+
+
+.leftmods a:hover{
+color:#000000;
+}
+
+.leftmods h1 {
+color:#cc3600;
+}
+
+.bottommods {
+height:30px;
+margin-top:-30px;
+position:relative;
+z-index:10; }
+
+
+.thewhite {
+padding-left:25px;
+padding-right:25px;
+padding-bottom:25px;
+padding-top:15px;
+}
+
+.modheader {
+font-weight:bold;
+color:#333333;
+}
+
+.narrow {
+margin-right:10px;
+margin-top:5px;
+margin-bottom:15px;
+position:relative;
+margin-left:210px;
+
+}
+
+
+.wide {
+margin-top:10px;
+margin-right:10px;
+margin-bottom:15px;
+position:relative;
+margin-left:0px;
+}
+
+.r {
+background: url(images/20/r.gif) repeat-y right;
+}
+
+.t {
+background: url(images/20/t.gif) repeat-x top;
+}
+
+.b {
+background: url(images/20/b.gif) repeat-x bottom;
+}
+
+.bl {
+background: url(images/20/bl.gif) no-repeat bottom left;
+}
+
+.br {
+background: url(images/20/br.gif) no-repeat bottom right;
+}
+
+.tl {
+background: url(images/20/tl.gif) no-repeat top left;
+}
+
+.tr {
+background: url(images/20/tr.gif) no-repeat top right;
+}
+
+.blueform {
+background:#DFEDF9;
+padding:10px;
+}
+
+.chords, .songwords, .songpart {
+font-family:Courier New;
+font-size:10pt;
+}
+
+#songtext {
+font-family:Courier New;
+font-size:10pt;
+}
+.chords, .chords a {
+font-weight:bold;
+color:#990000; 
+}
+
+.chords a {
+cursor:pointer;
+}
+
+
+.author {
+font-size:10px;
+text-transform:uppercase;
+margin-bottom:25px;
+color:#666666;
+}
+
+.listauthor {
+font-size:11px;
+text-transform:uppercase;
+margin-bottom:25px;
+color:#666666;
+}
+
+
+
+.songtitle {
+font-family:Arial, Helvetica, sans-serif;
+font-weight:bold;
+color:#000000;
+font-size:28px;
+line-height:.1;
+}
+
+.songpart {
+font-weight:bold;
+text-decoration:underline;
+}
+
+.versehead {
+	font-weight:bold;
+	text-decoration:underline;
+}
+
+.copyright, .ccli {
+font-size:9px;
+font-style:italic;
+color:#333333;
+}
+
+.footer {
+color: #999999;
+font-size:9px;
+margin-top:10px;
+border-top:#ebebeb thin solid;
+padding-top:5px;
+vertical-align:middle;
+clear:both;
+}
+
+.footer img {
+vertical-align:middle;
+}
+
+img a, img {
+border:0;
+}
+
+.tableheader td {
+border-width:2px;
+font-size:16px;
+}
+
+table.calendar {
+width:100%;
+}
+
+table.calendar td{
+	vertical-align:top;
+	height:52px;
+	width:14.24%;
+	background:#DFEDF9 url(images/bluecalgloss.gif) repeat-x;
+}
+
+table.calday table.caldayold {
+	width:100%;
+	margin:0px;
+	padding:0px;
+	border-collapse:collapse;
+}
+
+table.calday table.caldayold th{
+	font-weight:normal;
+	height:22px;
+	border-right:1px solid #ffffff;
+}
+table.calday td{
+	background: #DFEDF9;
+	vertical-align:middle;
+	border-right:1px solid #ffffff;
+	
+}
+table.caldayold td{
+	background: #FFFfff;
+	vertical-align:middle;
+]	border-right:1px solid #ffffff;
+}
+
+
+table.fullcalday {
+	width:100%;
+	padding:0px;
+	border-collapse:collapse;
+}
+table.fullcalday th{
+	font-weight:normal;
+	height:22px;
+	background: #DFEDF9 url(images/bluecalgloss.gif) repeat-x;
+	border-right:1px solid #ffffff;
+}
+table.fullcalday td{
+	background: #DFEDF9;
+	vertical-align:middle;
+	border-right:1px solid #ffffff;
+}
+
+table.caltoday {
+	width:100%;
+	padding:0px;
+	border-collapse:collapse;
+}
+table.caltoday th{
+	font-weight:normal;
+	height:22px;
+	background: #E3EED3 url(images/greencalgloss.gif) repeat-x;
+	border-right:1px solid #ffffff;
+}
+table.caltoday td{
+	background: #E3EED3;
+	vertical-align:middle;
+]	border-right:1px solid #ffffff;
+}
+
+
+table.serviceDetails {
+	width:100%
+}
+
+.serviceDetails td {
+	padding-left:10px;
+	padding-right:10px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10pt;
+}
+
+table.calendar .fulldayclass {
+background: #DFEDF9 url(images/bluecalgloss.gif) repeat-x;
+}
+
+.calendar-month {
+font-size:42px;
+}
+
+.daynames {
+padding:3px;
+font-size:14px;
+background:#666666 url(images/greygloss.gif) repeat-x;
+
+color:#FFFFFF;
+}
+
+table.calhead {
+	background-color:#ffffff;
+	width:100%;
+}
+td.calheadleft {
+	width:30%;
+	font-size:14pt;
+	text-align:left;
+	padding-left:5px;
+}
+td.calheadtitle {
+	width:40%;
+	text-align:center;
+	font-size:18pt;
+	font-weight:bold;
+}
+td.calheadright {
+	width:30%;
+	font-size:14pt;
+	text-align:right;
+	padding-right:5px;
+}
+td.calbox {
+border-style: inset;	
+}
+td.calboxold {
+border-style: inset;	
+}
+
+.dayclass {
+height:50px;
+width:50px;
+}
+.leadername {
+font-size:9px;
+color:#747474;
+}
+
+.icon {
+	border:0px;
+	padding-left: 5;
+	padding-right: 5;
+	
+}
+.login {
+	background:#FFFFFF;
+	position:relative;
+	border:#cccccc thin solid;
+	top:50px;
+	padding:10px;
+	width: 500px;
+	padding-bottom:25px;
+}
+
+.newbutton a {
+	color:#003399;
+	text-transform:uppercase;
+	font-size:9px;
+}
+.newbutton a:hover {
+	color:#81a2e3;
+	text-decoration:none;
+}
+
+.schedule td{
+font-size:12px;
+}
+
+.note {
+color:#666666;
+padding:8px;
+}
+
+#myservices {
+}
+
+.key {
+text-transform:none;
+}
+
+#promo {
+height:200px;
+}
+
+#featured {
+width:150px;
+float:left;
+}
+#featured p{
+font-size:10px;
+}
+
+.cd{
+border:#999999 solid thin;
+
+}
+
+.error {
+color:#CC0000;
+font-weight:bold;
+}
+
+
+.error a {
+color:#CC0000;
+}
+
+#textlogo {
+color:#FFFFFF;
+font-weight:bold;
+font-size:19px;
+position:absolute;
+top:10px;
+left:4px;
+width:200px;
+height:30px;
+overflow:hidden;
+}
+
+.eventitle {
+	color:#003399;
+	font-size:8pt;
+}
+.eventitle a:link {
+	color:#003399;
+}
+.eventitle a:visited {
+	color:#003399;
+}
+.eventitle a:hover {
+	color:#81a2e3;
+}
+
+.svcn {
+	font-size:11pt;
+}
+
+.rehearsaltitle {
+	color:#444444;
+	font-size:7pt;
+}
+.rehearsaltitle a:link {
+	color:#444444;
+}
+.rehearsaltitle a:visited {
+	color:#444444;
+}
+.rehearsaltitle a:hover {
+	color:#777777;
+}
+
+.schedulecanceltitle {
+	color:#cc0000;
+	font-size:7pt;
+}
+.schedulecanceltitle a:link {
+	color:#cc0000;
+}
+.schedulecanceltitle a:visited {
+	color:#cc0000;
+}
+.schedulecanceltitle a:hover {
+	color:#ff8A8A;
+}
+
+.scheduletitle {
+	color:#BE8600;
+	font-size:7pt;
+}
+.scheduletitle a:link {
+	color:#BE8600;
+}
+.scheduletitle a:visited {
+	color:#BE8600;
+}
+.scheduletitle a:hover {
+	color:#FFB400;
+}
+
+.servicetitle {
+	color:#009900;
+	font-size:7pt;
+}
+.servicetitle a:link {
+	color:#009900;
+}
+.servicetitle a:visited {
+	color:#009900;
+}
+.servicetitle a:hover {
+	color:#00ff00;
+}
+
+.leftmods {
+color:#333333;
+}
+
+.rehearsaltable {
+line-height:1.5;
+}
+
+table.songhead {
+	background-color:#ebebeb;
+	width:100%;
+}
+
+.songhead td{
+	font-weight:bold;
+	font-size:11pt;
+}
+
+div.songdetails {
+	text-align:center;
+}
+
+table.songdetails {
+	border:2px ridge;
+	text-align:left;
+	cursor:default;
+}
+.songdetails td {
+	padding-left:5px;
+	padding-right:5px;
+}
+
+.others {
+color:#666666;
+}
+
+#iframeholder {
+}
+
+.spreadsheet td {
+border-bottom:1px #999999 solid;
+border-left:1px #999999 solid;
+padding:5px;
+}
+.spreadsheet {
+border:1px #333333 solid;
+}
+
+.greyrow td{
+background:#ebebeb;
+}
+
+#tasks.leftmods {
+background-color:#FFFFCC;
+ }
+ 
+ .spacer {
+ width:3px;
+ }
+
+.tasktitle {
+}
+
+#tasks td {
+font-size:12px;
+color:#333333;
+}
+
+.cuetitle {
+color:#666666;
+font-size:19px;
+font-style:italic;
+}
+
+.cuetitle a {
+color:#666666;
+}
+
+.cuepart {
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+text-transform:uppercase;
+color:#990000;
+font-weight:bold;
+}
+
+.cuewords {
+font-family:Arial, Helvetica, sans-serif;
+font-weight:bold;
+font-size:22px;
+}
+
+#CalendarControlIFrame {
+  display: none;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  height: 250px;
+  width: 250px;
+  z-index: 99;
+}
+
+#CalendarControl {
+  position:absolute;
+  background-color:#FFF;
+  margin:0;
+  padding:0;
+  display:none;
+  z-index: 100;
+}
+
+#CalendarControl table {
+  font-family: arial, verdana, helvetica, sans-serif;
+  font-size: 8pt;
+  border-left: 1px solid #666666;
+  border-right: 1px solid #666666;
+}
+
+#CalendarControl th {
+  font-weight: normal;
+}
+
+#CalendarControl th a {
+  font-weight: normal;
+  text-decoration: none;
+  color: #FFF;
+  padding: 1px;
+}
+
+#CalendarControl td {
+  text-align: center;
+}
+
+#CalendarControl .header {
+  background-color: #666666;
+}
+
+#CalendarControl .weekday {
+  background-color: #DDD;
+  color: #000;
+}
+
+#CalendarControl .weekend {
+  background-color: #FFC;
+  color: #000;
+}
+
+#CalendarControl .current {
+  border: 1px solid #339;
+  background-color: #666666;
+  color: #FFF;
+}
+
+#CalendarControl .weekday,
+#CalendarControl .weekend,
+#CalendarControl .current {
+  display: block;
+  text-decoration: none;
+  border: 1px solid #FFF;
+  width: 2em;
+}
+
+#CalendarControl .weekday:hover,
+#CalendarControl .weekend:hover,
+#CalendarControl .current:hover {
+  color: #FFF;
+  background-color: #666666;
+  border: 1px solid #999;
+}
+
+#CalendarControl .previous {
+  text-align: left;
+}
+
+#CalendarControl .next {
+  text-align: right;
+}
+
+#CalendarControl .previous,
+#CalendarControl .next {
+  padding: 1px 3px 1px 3px;
+  font-size: 1.4em;
+}
+
+#CalendarControl .previous a,
+#CalendarControl .next a {
+  color: #FFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#CalendarControl .title {
+  text-align: center;
+  font-weight: bold;
+  color: #CCC;
+  font-size:12px;
+}
+
+#CalendarControl .empty {
+  background-color: #CCC;
+  border: 1px solid #FFF;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+.title{
+font-size:30px;
+font-weight:bold;
+color:#434343;
+}
+
+#btnLink a {
+	border:2px outset #ebebeb;
+	padding:2px;
+	background-color:#ebebeb;
+	color:#000000;
+	text-decoration:none;
+}
+
+#btnLink a:hover {
+	border:2px solid;
+	padding:2px;
+	background-color:#e1e1e1;
+	color:#000000;
+	text-decoration:none;
+}
+
+#btnLinkSM a {
+	font-size:9pt;
+	border:2px outset #ebebeb;
+	padding:2px;
+	background-color:#ebebeb;
+	color:#000000;
+	text-decoration:none;
+}
+
+#btnLinkSM a:hover {
+	border:2px inset;
+	padding:2px;
+	background-color:#e1e1e1;
+	color:#000000;
+	text-decoration:none;
+}
+
+#breadcrumb ul li{
+   font-size:8pt;
+   list-style-image: none;
+   display:inline;
+   padding: 0 3px 0 0;
+   margin: 3px 0 0 0;
+   color:#4682B4;
+}
+#breadcrumb ul{
+   position:absolute;
+   top:80px;right:4px;
+   margin:0;padding:0;
+   list-style-type: none;
+   padding-left: 1em;
+}
+
+/* rounded corners */
+.b1h, .b2h, .b3h, .b4h, .b2bh, .b3bh, .b4bh{font-size:1px; overflow:hidden; display:block;}
+.b1h {height:1px; background:#aaa; margin:0 5px;}
+.b2h, .b2bh {height:1px; background:#aaa; border-right:2px solid #aaa; border-left:2px solid #aaa; margin:0 3px;}
+.b3h, .b3bh {height:1px; background:#aaa; border-right:1px solid #aaa; border-left:1px solid #aaa; margin:0 2px;}
+.b4h, .b4bh {height:2px; background:#aaa; border-right:1px solid #aaa; border-left:1px solid #aaa; margin:0 1px;}
+.b2bh, .b3bh, .b4bh {background: #ffffff;}
+.headh {background: #aaa; border-bottom:1px solid #aaa; border-right:1px solid #aaa; border-left:1px solid #aaa;}
+.headh h4 {margin: 0px 10px 0px 10px; padding-bottom: 3px;}
+.headh a {color:#ffffff;text-decoration:underline;}
+.contenth {background: #ffffff; border-right:1px solid #aaa; border-left:1px solid #aaa;}
+.contenth div {margin-left: 5px;margin-right: 5px; padding-top: 2px;}
