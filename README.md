@@ -1,5 +1,5 @@
 # WorshipService
-Based on many years of nudging it along and keeping it running, this is a compose of many projects of work.  The code based should be refactored, and some white labeling is required.
+Based on many years of nudging it along and keeping it running, this is a compose of many projects of work.  The code based should be refactored, and some white labeling is required.  As well, it used a lot of JS scripts modules from others, and I need to restack that so they are properly included and referenced.
 
 Working to make this a white labelled system.  It continue many features build to provide support for organizing the worship service.  
 The orginal code based was assemebled by Rob Klapwyk. 
