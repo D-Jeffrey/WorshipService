@@ -11,7 +11,7 @@ session_cache_limiter();
 session_start();
 
 require('lr/config.php');
-require($baseDir.'/lr/functions.php'); 
+require('lr/functions.php'); 
 //this is group name or username of the group or person that you wish to allow access to
 // - please be advise that the Administrators Groups has access to all pages.
 if (allow_access(Administrators) != "yes") { 

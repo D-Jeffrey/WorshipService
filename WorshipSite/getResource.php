@@ -6,7 +6,7 @@ session_cache_limiter();
 session_start();
 
 require('lr/config.php');
-require($baseDir.'/lr/functions.php'); 
+require('lr/functions.php'); 
 
 if (allow_access(Users) != "yes") { 
 	echo "<html>\n<body onLoad='document.frmLogin.submit();'><form action='/lr/login.php' name='frmLogin' method='post'>\n";

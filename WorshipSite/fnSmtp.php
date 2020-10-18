@@ -111,7 +111,7 @@ function setUpSMTP($mailPHP, $sSubject, $sMsgBody, $defaultReplyTo = TRUE) {
 return $mailPHP;
 
 //Set who the message is to be sent to
-//  $mailPHP->addAddress('darren@southcalgary.org', 'DJ-SCCC');
+//  $mailPHP->addAddress('darren@me.org', 'DJ-SCCC');
 
 //Read an HTML message body from an external file, convert referenced images to embedded,
 //convert HTML into a basic plain-text alternative body

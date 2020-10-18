@@ -12,7 +12,7 @@ session_cache_limiter();
 session_start();
 
 require('lr/config.php');
-require($baseDir.'/lr/functions.php'); 
+require('lr/functions.php'); 
 //this is group name or username of the group or person that you wish to allow access to
 // - please be advise that the Administrators Groups has access to all pages.
 if (allow_access(Users) != "yes") { 
@@ -39,8 +39,24 @@ if(isset($_REQUEST["action"]) && $_REQUEST["action"]=="del") {
 	$result = $db->query($q);
 	$q = "DELETE FROM serviceteam WHERE serviceID=".$_REQUEST["id"];
 	$result = $db->query($q);
-	$q = "DELETE FROM services WHERE serviceID=".$_REQUEST["id"];
+    
+    $q = "DELETE FROM serviceschedule WHERE serviceID=".$_REQUEST["id"];
 	$result = $db->query($q);
+    $q = "DELETE FROM serviceresources WHERE serviceID=".$_REQUEST["id"];
+	$result = $db->query($q);
+    $q = "DELETE FROM svcchangereq WHERE serviceID=".$_REQUEST["id"];
+	$result = $db->query($q);
+	$sql = "SELECT date_format(svcDateTime, '%W %M %D') as svcDATE FROM services WHERE serviceID=".$_REQUEST["id"];
+    $dbSch=mysqli_fetch_array($db->query($sql));
+    $d = $dbSch["svcDATE"];
+    $q = "DELETE FROM teamschedule WHERE svcDate='$d'";
+	$result = $db->query($q);
+	$q = "DELETE FROM services WHERE serviceID=".$_REQUEST["id"];
+    $result = $db->query($q);
+	$q = "DELETE FROM svcchangereq WHERE serviceID=".$_REQUEST["id"];
+
+	$result = $db->query($q);
+	
 	header("Location: calendar.php?y=$intYear&m=$intMonth&mbr=$intMember"); 
 }
 

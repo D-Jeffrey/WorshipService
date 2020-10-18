@@ -5,7 +5,7 @@ header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
 session_start();
 
 require('lr/config.php');
-require($baseDir.'/lr/functions.php'); 
+require('lr/functions.php'); 
 if (allow_access(Users) != "yes") {
 	exit;
 }

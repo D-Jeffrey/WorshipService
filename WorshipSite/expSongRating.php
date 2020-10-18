@@ -9,7 +9,7 @@ header("Content-Transfer-Encoding: binary ");
 session_start();
 
 require($_SERVER["DOCUMENT_ROOT"].'/lr/config.php');
-require($baseDir.'/lr/functions.php'); 
+require('lr/functions.php'); 
 if (allow_access(Coordinator) != "yes") { 
 	exit;
 }

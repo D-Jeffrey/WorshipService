@@ -11,7 +11,7 @@ use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 use PhpOffice\PhpSpreadsheet\Shared\Date;
 
 require($_SERVER["DOCUMENT_ROOT"].'/lr/config.php');
-require($baseDir.'/lr/functions.php'); 
+require('lr/functions.php'); 
 require($baseDir.'/classes/PhpSpreadsheet/Bootstrap.php');
 
 

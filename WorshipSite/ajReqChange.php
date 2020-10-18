@@ -18,7 +18,7 @@ session_cache_limiter();
 session_start();
 
 require('lr/config.php');
-require($baseDir.'/lr/functions.php'); 
+require('lr/functions.php'); 
 include('fnNicetime.php');
 
 include("fnSmtp.php");
@@ -426,11 +426,11 @@ function sendChgConfirmation($requestID,$orig="mbr") {
 		// Retrieve Role Coordinator contact
 		$q = "SELECT * FROM roles INNER JOIN roletypes ON roles.typeID=roletypes.typeID INNER JOIN members ON typeContact=memberID WHERE roleID=".$dbReq["roleID"];
 		$resCoord = $db->query($q);
-		if($dbCoord = mysqli_fetch_array($resCoord)
+		if ($dbCoord = mysqli_fetch_array($resCoord)) {
 			if (EMAILCOORD_ON) {
-			if($dbCoord["mbrEmail1"]!="") $aCC[] = array("Name"=>$dbCoord["mbrFirstName"]." ".$dbCoord["mbrLastName"],"Email"=>$dbCoord["mbrEmail1"]);
-			if($dbCoord["mbrEmail2"]!="") $aCC[] = array("Name"=>$dbCoord["mbrFirstName"]." ".$dbCoord["mbrLastName"],"Email"=>$dbCoord["mbrEmail2"]);
-			
+			    if($dbCoord["mbrEmail1"]!="") $aCC[] = array("Name"=>$dbCoord["mbrFirstName"]." ".$dbCoord["mbrLastName"],"Email"=>$dbCoord["mbrEmail1"]);
+			    if($dbCoord["mbrEmail2"]!="") $aCC[] = array("Name"=>$dbCoord["mbrFirstName"]." ".$dbCoord["mbrLastName"],"Email"=>$dbCoord["mbrEmail2"]);
+			}
 		}
 		// Retrieve Service Information
 		$q = "SELECT * FROM services WHERE serviceID=".$dbReq["serviceID"];
@@ -501,14 +501,15 @@ function sendAppMessage($requestID) {
 		// Retrieve Role Coordinator contact
 		$q = "SELECT * FROM roles INNER JOIN roletypes ON roles.typeID=roletypes.typeID INNER JOIN members ON typeContact=memberID WHERE roleID=".$dbReq["roleID"];
 		$resCoord = $db->query($q);
-		if($dbCoord = mysqli_fetch_array($resCoord) 
-			if  (EMAILCOORD_ON) {
+		if($dbCoord = mysqli_fetch_array($resCoord))  {
+			if (EMAILCOORD_ON) {
 			if($dbCoord["mbrEmail1"]!="") {
 				$aCC[] = array("Name"=>$dbCoord["mbrFirstName"]." ".$dbCoord["mbrLastName"],"Email"=>$dbCoord["mbrEmail1"]);
 			}
 			if($dbCoord["mbrEmail2"]!="") {
 				$aCC[] = array("Name"=>$dbCoord["mbrFirstName"]." ".$dbCoord["mbrLastName"],"Email"=>$dbCoord["mbrEmail2"]);
 			}
+            }
 		}
 		// Retrieve Service Information
 		$q = "SELECT * FROM services WHERE serviceID=".$dbReq["serviceID"];

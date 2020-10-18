@@ -67,6 +67,7 @@ if($showMenu) {
 		echo "<a href=\"/editSvcMessage.php\">Service Order Template</a>\n";
 		echo "<a href=\"/editSiteConfig.php\">Site Configuration</a>\n";
 		echo "<a href=\"/scripts/tinyfilemanager.php\">Manage Files</a>\n";
+        echo "<a href=\"/editPurge.php\">Purge Services</a>\n";
 		echo "</div>\n";
 	}
 

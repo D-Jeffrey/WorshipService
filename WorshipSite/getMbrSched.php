@@ -35,7 +35,10 @@ if(!$resMbr || (mysqli_num_rows($resMbr) == 0)) {
 $dbMbr=mysqli_fetch_array($resMbr);
 
 /* Retrieve member service schedule */
-$q = "SELECT services.serviceID as svcID, svcTeamNotes, date_format(svcPractice, '%W %M %D') as svcPDATE, date_format(svcPractice, '%H:%i') as svcPTIME, date_format(svcDateTime, '%a %b %D') as svcDATE, date_format(svcDateTime, '%H:%i') as svcTIME,roleIcon,roleDescription FROM services INNER JOIN serviceteam ON services.serviceID = serviceteam.serviceID INNER JOIN roles on serviceteam.roleID = roles.roleID WHERE (serviceteam.memberID = $memberID OR concat(',','".$dbMbr["groupArray"]."',',') LIKE concat('%,',serviceteam.memberID,',%')) AND svcDateTime>='".date("Y-m-d")."' ORDER BY svcDateTime, roleDescription";
+$q = "SELECT services.serviceID as svcID, svcTeamNotes, date_format(svcPractice, '%W %M %D') as svcPDATE, date_format(svcPractice, '%H:%i') as svcPTIME, date_format(svcDateTime, '%a %b %D') as svcDATE, date_format(svcDateTime, '%H:%i') as svcTIME,roleIcon,roleDescription FROM services INNER JOIN serviceteam ON services.serviceID = serviceteam.serviceID INNER JOIN roles on serviceteam.roleID = roles.roleID WHERE (serviceteam.memberID = $memberID OR concat(',','".$dbMbr["groupArray"]."',',') LIKE concat('%,',serviceteam.memberID,',%'))" .
+       // " AND svcDateTime>='".date("Y-m-d"). "'".
+        " ORDER BY svcDateTime, roleDescription";
+                
 $resSched = $db->query($q);
 $mbrName = $dbMbr["mbrType"]=="G"?$dbMbr["mbrLastName"]:$dbMbr["mbrFirstName"]." ".$dbMbr["mbrLastName"];
 echo "<b class=\"b1h\"></b><b class=\"b2h\"></b><b class=\"b3h\"></b><b class=\"b4h\"></b>\n";
@@ -47,6 +50,7 @@ echo "	<table width='100%' cellpadding='0' cellspacing='0'>";
 $saveID = 0;
 $shade=false;
 $numRoles = 0;
+
 if(mysqli_num_rows($resSched)>0) {
 	while($dbSch=mysqli_fetch_array($resSched)) {
 		if($saveID != $dbSch["svcID"] && $saveID != 0) {

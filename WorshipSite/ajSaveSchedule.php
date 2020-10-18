@@ -6,7 +6,7 @@ session_cache_limiter();
 session_start();
 
 require('lr/config.php');
-require($baseDir.'/lr/functions.php'); 
+require('lr/functions.php'); 
 if (allow_access(Administrators) != "yes") { 
 	exit;
 }

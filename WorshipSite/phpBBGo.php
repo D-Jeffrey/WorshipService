@@ -1,7 +1,7 @@
 <?php
 session_start();
 require('lr/config.php');
-require($baseDir.'/lr/functions.php'); 
+require('lr/functions.php'); 
 if ($use_phpBB3) {
 
 	// Login to the phpBB forum

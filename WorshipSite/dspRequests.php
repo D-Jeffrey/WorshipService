@@ -18,7 +18,7 @@ session_cache_limiter();
 session_start();
 
 require('lr/config.php');
-require($baseDir.'/lr/functions.php'); 
+require('lr/functions.php'); 
 
 include("fnSmtp.php");
 //this is group name or username of the group or person that you wish to allow access to
