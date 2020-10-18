@@ -29,3 +29,6 @@ with Semi-tone adjustable
 
 ### Planner
 ![Planner](https://github.com/D-Jeffrey/WorshipService/raw/main/Docs/snapshots/9.png)
+
+### Generate Notification to Team members
+![Planner](https://github.com/D-Jeffrey/WorshipService/raw/main/Docs/snapshots/10.png)
