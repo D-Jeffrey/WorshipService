@@ -27,6 +27,7 @@ with Semi-tone adjustable
 ![Member Information](https://github.com/D-Jeffrey/WorshipService/raw/main/Docs/snapshots/7.png)
 
 ### Team Directory
+note this names used in this screen shot are generated names for the demo installation 
 ![Team Directory](https://github.com/D-Jeffrey/WorshipService/raw/main/Docs/snapshots/8.png)
 
 # Planner
