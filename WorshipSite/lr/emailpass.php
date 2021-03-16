@@ -83,7 +83,7 @@ if(isset($_POST["submit"])) {
 		$tMsg = SendEmailAddAddress($mailMessage, array( $to), array($name));
 	
 		$rtnMsg = SendEmailLog($mailMessage, $tMsg);
-		$log  = date("Y.m.d H:i")." Validate Reset: mail `". $_POST['email']. "` User: `". $_POST['username']. "`". PHP_EOL;		
+		$log  = date("Y.m.d H:i")." Validate Reset: mail `". $_POST['email']. "` User: `". $uname. "`". PHP_EOL;		
 			
 			//Write action to txt log
 		file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/logs/resetpwd_'.date("Y.m").'.txt', $log, FILE_APPEND);
